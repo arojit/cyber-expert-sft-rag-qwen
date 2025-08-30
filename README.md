@@ -66,6 +66,24 @@ assistant
   ]
 }
 ```
+### Step 3: Fetch NVD, MITRE, and OWASP
+```bash
+python python src/sync_security_corpora.py --root data/security_corpus --nvd-api-key $NVD_API_KEY
+```
+Data
+```
+security_corpus/
+  nvd/
+    raw/           # raw API responses (paged)
+    normalized/    # one JSON per CVE (easy to embed)
+  mitre_attack/
+    normalized/    # one JSON per STIX object (technique/group/software/etc.)
+  mitre_attack_repo/  # git checkout (for traceability)
+  owasp_top10/
+    normalized/    # Markdown files (A01..A10 & docs)
+  owasp_top10_repo/   # git checkout
+  .state/state.json   # last NVD sync time
+```
 
 ## Model Behavior
 

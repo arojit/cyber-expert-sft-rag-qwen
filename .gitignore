@@ -5,3 +5,6 @@ __pycache__/
 
 # model directory
 model/
+
+# Data Corpus
+security_corpus/
