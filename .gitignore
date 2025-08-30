@@ -8,3 +8,6 @@ model/
 
 # Data Corpus
 security_corpus/
+
+# FAISS Index
+rag/

@@ -66,9 +66,10 @@ assistant
   ]
 }
 ```
+
 ### Step 3: Fetch NVD, MITRE, and OWASP
 ```bash
-python python src/sync_security_corpora.py --root data/security_corpus --nvd-api-key $NVD_API_KEY
+python src/sync_security_corpora.py --root data/security_corpus --nvd-api-key $NVD_API_KEY
 ```
 Data
 ```
@@ -83,6 +84,16 @@ security_corpus/
     normalized/    # Markdown files (A01..A10 & docs)
   owasp_top10_repo/   # git checkout
   .state/state.json   # last NVD sync time
+```
+
+### Step 4: Build the FAISS Index
+```bash
+python src/build_faiss_index.py 
+```
+Data
+```
+Index built: data/rag/faiss.index
+Metadata saved: data/rag/segments.jsonl
 ```
 
 ## Model Behavior

@@ -4,3 +4,6 @@ transformers
 peft
 trl
 bitsandbytes
+faiss-cpu 
+sentence-transformers
+tiktoken
