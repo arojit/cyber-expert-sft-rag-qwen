@@ -7,8 +7,8 @@ The model is trained on a curated dataset of OWASP Top 10, MITRE ATT&CK, and rec
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/arojit/model-training-with-sft
-cd model-training-with-sft
+git clone https://github.com/arojit/cyber-expert-sft-rag-qwen.git
+cd cyber-expert-sft-rag-qwen
 ```
 
 ### 2. Create and Activate Virtual Environment (Recommended)
